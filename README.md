@@ -2,7 +2,7 @@
 
 A source-linked directory of startup accelerators, incubators, residencies, fellowships and other programs for founders. Compare funding, equity terms, eligibility, attendance and application requirements without losing the underlying sources.
 
-[![Validate & build](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml/badge.svg)](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml)
+[![Validate & build](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml/badge.svg?branch=main)](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC_BY_4.0-blue)](LICENSE-DATA)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue)](LICENSE)
 

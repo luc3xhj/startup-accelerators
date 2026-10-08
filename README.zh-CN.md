@@ -2,7 +2,7 @@
 
 一个保留来源的开放数据目录，覆盖加速器、孵化器、驻留项目、Fellowship 和其他创业支持项目。可以比较资金与股权条款、申请资格、参与方式和申请材料，并查看背后的官方来源。
 
-[![Validate & build](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml/badge.svg)](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml)
+[![Validate & build](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml/badge.svg?branch=main)](https://github.com/luc3xhj/startup-accelerators/actions/workflows/data.yml)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC_BY_4.0-blue)](LICENSE-DATA)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue)](LICENSE)
 
