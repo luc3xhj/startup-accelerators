@@ -1,0 +1,29 @@
+name: Correct a record / 修正资料
+description: Report changed or incorrect terms, eligibility, links or dates.
+title: "[Correction] "
+body:
+  - type: input
+    id: program
+    attributes:
+      label: Program name or record ID / 项目名称或 ID
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Current value and proposed correction / 原值与建议修正
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting official sources / 官方依据
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Date checked / 核验日期
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true

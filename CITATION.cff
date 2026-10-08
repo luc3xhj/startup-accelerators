@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite this repository and the version used."
+type: dataset
+title: "Startup Accelerators & Founder Programs"
+authors:
+  - family-names: "Jin"
+    given-names: "Lucas"
+    website: "https://github.com/luc3xhj"
+version: 0.1.0
+date-released: 2026-10-08
+url: "https://github.com/luc3xhj/startup-accelerators"
+repository-code: "https://github.com/luc3xhj/startup-accelerators"
+license: CC-BY-4.0
+abstract: "A source-linked Foundshore directory of startup accelerators, incubators, residencies, fellowships and founder support programs."
+keywords:
+  - startups
+  - accelerators
+  - founder programs
+  - open data

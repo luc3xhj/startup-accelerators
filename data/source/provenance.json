@@ -1,0 +1,25 @@
+{
+  "archive": "accelerators-complete.jsonl",
+  "jsonl_sha256": "d33ae077aaac5b3f9b3258103e56b6b5f3b635161d9a34daea8f58b5b1a87893",
+  "record_count": 157,
+  "program_count": 150,
+  "original_manifest": {
+    "record_type": "manifest",
+    "dataset": "foundshore_accelerator_programs",
+    "exported_at": "2026-09-19T08:13:23.463Z",
+    "program_count": 150,
+    "source": "Foundshore_Founder_Programs_Intelligence_v10_Official_Logo_Pass_2026-09-06.xlsx",
+    "source_sha256": "d5c34facb0ee1068c36acddb50a6d68538bb7f7049665a83739b7e9b85d2db27",
+    "includes": [
+      "programs (full facts raw + translated)",
+      "program-ranking.json",
+      "program-translations.en.json",
+      "program-order.json",
+      "program-logo-layout.json",
+      "taxonomy (normalized filters)",
+      "display_order (editorial)"
+    ]
+  },
+  "attribution": "Lucas Jin (luc3xhj) / Foundshore",
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "program_count": 150,
+  "network_count": 96,
+  "verification_dates": [
+    "2026-09-06"
+  ],
+  "category_counts": {
+    "type": {
+      "Accelerator": 54,
+      "Community / education": 43,
+      "Corporate / market access": 16,
+      "Fellowship": 16,
+      "Incubator": 5,
+      "Residency": 16
+    },
+    "region": {
+      "Asia": 19,
+      "Europe": 25,
+      "Global": 72,
+      "Latin America": 1,
+      "Middle East": 4,
+      "North America": 83,
+      "Oceania": 6
+    },
+    "stage": {
+      "Growth": 18,
+      "Pre-company": 33,
+      "Pre-seed": 133,
+      "Seed": 106,
+      "Series A": 28
+    },
+    "capital": {
+      "Conditional funding": 28,
+      "Credits / services": 36,
+      "Grant / stipend": 16,
+      "Investment": 65,
+      "Not disclosed": 1,
+      "Prizes": 4
+    },
+    "attendance": {
+      "Hybrid": 25,
+      "In person": 54,
+      "Not disclosed": 1,
+      "Remote": 3,
+      "Varies by program": 67
+    },
+    "status": {
+      "Closed": 32,
+      "Inactive": 1,
+      "Open": 45,
+      "Rolling": 24,
+      "To confirm": 35,
+      "Upcoming": 6,
+      "Waitlist": 7
+    }
+  },
+  "original_archive_sha256": "d33ae077aaac5b3f9b3258103e56b6b5f3b635161d9a34daea8f58b5b1a87893"
+}

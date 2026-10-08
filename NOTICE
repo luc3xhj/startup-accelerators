@@ -1,0 +1,24 @@
+Startup Accelerators & Founder Programs
+Compiled by Lucas Jin (luc3xhj) / Foundshore
+https://github.com/luc3xhj/startup-accelerators
+
+License scope
+-------------
+Data in data/, the original contributor-supplied archive and its extracted
+metadata, generated directories and profiles, READMEs and other documentation
+are licensed under Creative Commons Attribution 4.0 International (LICENSE-DATA).
+
+Scripts, tests, validation schemas, record templates, workflow configuration,
+Makefile and repository tooling are licensed under the MIT License (LICENSE).
+
+The data-package descriptor, citation metadata and checksums describe the
+CC BY 4.0 dataset. For redistributions of the data, retain attribution, link to
+the license and identify changes as required by CC BY 4.0.
+
+The initial research, editorial scores and assessments originate from the
+contributor-supplied Foundshore export. Original source links are retained.
+
+Names, logos and trademarks belong to their respective owners. The licenses
+above do not grant trademark rights or license external websites or assets
+merely referenced by URL. No program logo images are bundled in this repository.
+Inclusion does not imply endorsement by or affiliation with a listed program.

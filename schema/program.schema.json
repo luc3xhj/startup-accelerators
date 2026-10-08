@@ -1,0 +1,331 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/luc3xhj/startup-accelerators/main/schema/program.schema.json",
+  "title": "Founder program record",
+  "description": "Source-linked accelerator or founder program; optional editorial fields retain Foundshore research.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_type",
+    "id",
+    "name",
+    "name_en",
+    "network",
+    "network_en",
+    "facts",
+    "categories"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "program"
+    },
+    "display_order": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "name_en": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "network": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "network_en": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "score": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "logo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "logoSource": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "logoLayout": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "asset": {
+          "type": "string"
+        },
+        "width": {
+          "type": "number",
+          "minimum": 1
+        },
+        "height": {
+          "type": "number",
+          "minimum": 1
+        },
+        "viewBox": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    },
+    "facts_raw": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "facts": {
+      "type": "object",
+      "required": [
+        "Program Type",
+        "Website",
+        "Application Link",
+        "Primary Source",
+        "Last Verified"
+      ],
+      "properties": {
+        "Website": {
+          "type": "string",
+          "format": "uri"
+        },
+        "Application Link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "Primary Source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One URL or multiple URLs separated by semicolon and whitespace."
+        },
+        "Last Verified": {
+          "type": "string",
+          "format": "date"
+        },
+        "Foundshore Score": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "categories": {
+      "type": "object",
+      "required": [
+        "type",
+        "region",
+        "stage",
+        "capital",
+        "attendance",
+        "status"
+      ],
+      "properties": {
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Accelerator",
+              "Incubator",
+              "Residency",
+              "Fellowship",
+              "Corporate / market access",
+              "Community / education"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "region": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "North America",
+              "Latin America",
+              "Europe",
+              "Asia",
+              "Middle East",
+              "Oceania",
+              "Global"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "stage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Pre-company",
+              "Pre-seed",
+              "Seed",
+              "Series A",
+              "Growth"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "capital": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Investment",
+              "Grant / stipend",
+              "Conditional funding",
+              "Prizes",
+              "Credits / services",
+              "Not disclosed"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "attendance": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "In person",
+              "Hybrid",
+              "Remote",
+              "Varies by program",
+              "Not disclosed"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "status": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Open",
+              "Rolling",
+              "Upcoming",
+              "Waitlist",
+              "Closed",
+              "To confirm",
+              "Inactive"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "ranking": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fundingTier": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "amount": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[A-Z]{3}$"
+        },
+        "amountBasis": {
+          "type": "string"
+        },
+        "cohortsCompleted": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "cohortSource": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "reputation": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 3
+        },
+        "reputationSource": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      }
+    }
+  }
+}

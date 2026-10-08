@@ -1,0 +1,29 @@
+{
+  "record_type": "program",
+  "id": "example-accelerator",
+  "name": "Example Accelerator",
+  "name_en": "Example Accelerator",
+  "network": "Example Network",
+  "network_en": "Example Network",
+  "facts": {
+    "Program Type": "Accelerator",
+    "Location": "Replace with the researched location",
+    "Funding / Support": "Replace with documented support and conditions",
+    "Equity / Economic Terms": "Replace with documented terms or Not disclosed",
+    "Official / Must-Have Requirements": "Replace with documented eligibility",
+    "Application Status": "To confirm",
+    "Website": "https://example.org/",
+    "Application Link": "https://example.org/apply",
+    "Primary Source": "https://example.org/program",
+    "Research Confidence": "Replace with a source-based confidence note",
+    "Last Verified": "2026-10-08"
+  },
+  "categories": {
+    "type": ["Accelerator"],
+    "region": ["Global"],
+    "stage": [],
+    "capital": ["Not disclosed"],
+    "attendance": ["Not disclosed"],
+    "status": ["To confirm"]
+  }
+}

@@ -1,0 +1,35 @@
+name: Add a program / 补充项目
+description: Suggest a source-backed accelerator or founder program.
+title: "[Add] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Program and network / 项目与所属网络
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Official sources / 官方来源
+      description: Include the official program page and application link.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Program details / 项目信息
+      description: Share type, location, stage, eligibility, funding and equity terms. Identify unknown or conditional values.
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Date checked / 核验日期
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Relevant affiliation, if any / 如有相关关系，请说明

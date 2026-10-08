@@ -1,0 +1,162 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+  "name": "startup-accelerators",
+  "title": "Startup Accelerators & Founder Programs",
+  "description": "A source-linked directory of accelerators, incubators, residencies, fellowships and founder support programs.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/luc3xhj/startup-accelerators",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Lucas Jin (luc3xhj)",
+      "role": "author",
+      "path": "https://github.com/luc3xhj"
+    },
+    {
+      "title": "Foundshore",
+      "role": "publisher",
+      "path": "https://foundshore.com"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Foundshore_Founder_Programs_Intelligence_v10_Official_Logo_Pass_2026-09-06.xlsx",
+      "path": "data/source/accelerators-complete.jsonl"
+    }
+  ],
+  "resources": [
+    {
+      "name": "programs-csv",
+      "type": "table",
+      "path": "data/accelerators.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "network",
+            "type": "string"
+          },
+          {
+            "name": "program_type",
+            "type": "string"
+          },
+          {
+            "name": "region_tags",
+            "type": "string"
+          },
+          {
+            "name": "location",
+            "type": "string"
+          },
+          {
+            "name": "focus",
+            "type": "string"
+          },
+          {
+            "name": "stage_tags",
+            "type": "string"
+          },
+          {
+            "name": "capital_tags",
+            "type": "string"
+          },
+          {
+            "name": "funding_support",
+            "type": "string"
+          },
+          {
+            "name": "equity_terms",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "type": "string"
+          },
+          {
+            "name": "attendance_tags",
+            "type": "string"
+          },
+          {
+            "name": "status_tags",
+            "type": "string"
+          },
+          {
+            "name": "application_status",
+            "type": "string"
+          },
+          {
+            "name": "deadline",
+            "type": "string"
+          },
+          {
+            "name": "website",
+            "type": "string"
+          },
+          {
+            "name": "application_url",
+            "type": "string"
+          },
+          {
+            "name": "source_urls",
+            "type": "string"
+          },
+          {
+            "name": "last_verified",
+            "type": "string"
+          },
+          {
+            "name": "research_confidence",
+            "type": "string"
+          },
+          {
+            "name": "editorial_score",
+            "type": "integer"
+          },
+          {
+            "name": "reported_amount",
+            "type": "number"
+          },
+          {
+            "name": "reported_currency",
+            "type": "string"
+          },
+          {
+            "name": "amount_basis",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "id"
+      }
+    },
+    {
+      "name": "programs-json",
+      "path": "data/accelerators.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "programs-jsonl",
+      "path": "data/accelerators.jsonl",
+      "format": "jsonl",
+      "mediatype": "application/x-ndjson",
+      "encoding": "utf-8"
+    }
+  ]
+}

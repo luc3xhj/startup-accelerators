@@ -1,0 +1,50 @@
+{
+  "type": [
+    "Accelerator",
+    "Incubator",
+    "Residency",
+    "Fellowship",
+    "Corporate / market access",
+    "Community / education"
+  ],
+  "region": [
+    "North America",
+    "Latin America",
+    "Europe",
+    "Asia",
+    "Middle East",
+    "Oceania",
+    "Global"
+  ],
+  "stage": [
+    "Pre-company",
+    "Pre-seed",
+    "Seed",
+    "Series A",
+    "Growth"
+  ],
+  "capital": [
+    "Investment",
+    "Grant / stipend",
+    "Conditional funding",
+    "Prizes",
+    "Credits / services",
+    "Not disclosed"
+  ],
+  "attendance": [
+    "In person",
+    "Hybrid",
+    "Remote",
+    "Varies by program",
+    "Not disclosed"
+  ],
+  "status": [
+    "Open",
+    "Rolling",
+    "Upcoming",
+    "Waitlist",
+    "Closed",
+    "To confirm",
+    "Inactive"
+  ]
+}
